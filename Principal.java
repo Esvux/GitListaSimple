@@ -5,6 +5,7 @@ public class Principal {
 		listaArtesanal.agregar(new Persona("Juan", "Santizo"));
 		listaArtesanal.agregar(new Persona("Esvin", "González"));
 		listaArtesanal.agregar(null);
+		listaArtesanal.eliminar(0);
 		listaArtesanal.mostrar();
 	}
 	
