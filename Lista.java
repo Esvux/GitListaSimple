@@ -2,12 +2,14 @@ public class Lista <T> {
 
 	//Variables globales - Atributo/Propiedad de clase
 	Nodo<T> inicio; //null
+	int contador =0;
 
 	public Lista() {
 		this.inicio = null;
 	}
 
 	public void agregar(T nuevo) {
+
 		if(this.inicio == null) {
 			//Es el primer elemento
 			this.inicio = new Nodo<>(nuevo);
@@ -16,6 +18,7 @@ public class Lista <T> {
 			Nodo<T> nuevoNodo = new Nodo<>(nuevo);
 			nuevoNodo.puntero = this.inicio;
 			this.inicio = nuevoNodo;
+			//counter++;
 		}
 	}
 
@@ -24,6 +27,7 @@ public class Lista <T> {
 		while(temp != null) {
 			System.out.println(temp.valor);
 			temp = temp.puntero;
+			contador++;
 		}
 	}
 
@@ -45,8 +49,14 @@ public class Lista <T> {
 			//Encontré el elemento a eliminar
 			anterior.puntero = actual.puntero;
 			return actual.valor;
+
 		}
-		throw new IndexOutOfBoundsException("Índice fuera de la lista " + i);
+		contador--;
+		throw new IndexOutOfBoundsException("Indice fuera de la lista " + i);
+	}
+
+	public void counter(){
+		System.out.println("Numero de Items en la lista:" +contador);
 	}
 
 }
