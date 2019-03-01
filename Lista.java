@@ -46,7 +46,26 @@ public class Lista <T> {
 			anterior.puntero = actual.puntero;
 			return actual.valor;
 		}
-		throw new IndexOutOfBoundsException("Índice fuera de la lista " + i);
+		throw new IndexOutOfBoundsException("Indice fuera de la lista " + i);
+	}
+
+	public T reemplazar(int i, T nuevo){
+		if (i < 0) {
+			throw new IndexOutOfBoundsException("No se permite reemplazar elementos con índice negativo");
+		}
+		Nodo<T> actual = this.inicio;
+		int contador = 0;
+		while(actual != null){
+			if (contador != i) {
+				actual = actual.puntero;
+				contador++;
+				continue;
+			}
+			Nodo<T> temporal = actual;
+			actual.valor = nuevo;
+			return temporal.valor;
+		}
+		throw new IndexOutOfBoundsException("Indice fuera de la lista " + i);
 	}
 
 }
