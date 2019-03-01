@@ -37,4 +37,26 @@ public class Lista <T> {
 		}
 	}
 
+	public T eliminar(int i) {
+		if(i < 0) {
+			throw new IndexOutOfBoundsException("No se permite eliminar elementos con índice negativo.");
+		}
+		Nodo<T> anterior = null;
+		Nodo<T> actual = this.inicio;
+		int contador = 0;
+		while(actual != null) {
+			if(contador != i) {
+				//No es el elemento a eliminar
+				anterior = actual;
+				actual = actual.puntero;
+				contador++;
+				continue;
+			}
+			//Encontré el elemento a eliminar
+			anterior.puntero = actual.puntero;
+			return actual.valor;
+		}
+		throw new IndexOutOfBoundsException("Índice fuera de la lista " + i);
+	}
+
 }

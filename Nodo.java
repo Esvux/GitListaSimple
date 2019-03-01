@@ -4,7 +4,7 @@
 
 public class Nodo <T> {
 
-	Nodo puntero;
+	Nodo<T> puntero;
 	T valor;
 
 	public Nodo() { }
