@@ -13,19 +13,9 @@ public class Lista <T> {
 			this.inicio = new Nodo<>(nuevo);
 		} else {
 			//Ya hay al menos un elemento
-			
-			Nodo<T> temp = this.inicio;
-			//Una referencia al inicio de la lista
-			while(temp.puntero != null) {
-				temp = temp.puntero;
-			}
-			// temp está apuntando al último elemento de la lista
-
-			// creo el nuevo nodo (wrapper)
 			Nodo<T> nuevoNodo = new Nodo<>(nuevo);
-
-			// el último apunta al nuevo y listo...
-			temp.puntero = nuevoNodo;
+			nuevoNodo.puntero = this.inicio;
+			this.inicio = nuevoNodo;
 		}
 	}
 
@@ -36,5 +26,6 @@ public class Lista <T> {
 			temp = temp.puntero;
 		}
 	}
+
 
 }
