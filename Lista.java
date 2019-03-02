@@ -50,17 +50,21 @@ public class Lista <T> {
 	}
 
 	public T reemplazar(int i, T nuevo) {
-		int index = 0;
+
+		if(i<0) {
+		    throw new IllegalStateException("El indice no puede ser negativo: " + i);
+        }
+
+		// What if inicio == null? Return it
+		if(this.inicio == null) {
+			throw new IllegalStateException("La lista esta vacia");
+		}
+
+        int index = 0;
         Nodo<T> prev = this.inicio;
 
         // Create new nodo
         Nodo<T> newNodo = new Nodo<>(nuevo);
-
-		if(i<0)
-		// What if inicio == null? Return it
-		if(prev == null) {
-			throw new IllegalStateException("La lista esta vacia");
-		}
 
 		// What if i = 0? Replace inicio
 		if(i == 0) {
