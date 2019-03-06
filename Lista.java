@@ -2,9 +2,8 @@ public class Lista <T> {
 
 	//Variables globales - Atributo/Propiedad de clase
 	Nodo<T> inicio; //null
-
+	int contador =0;
 	int longitud;
-	int contador;
 	int i;
 
 	public Lista() {
@@ -115,7 +114,4 @@ public class Lista <T> {
 			prev.puntero = newNodo;
 			return replaced.valor;
 		}
-
-	}
-
 }
