@@ -1,0 +1,49 @@
+[33mcommit 524c33e6cee2de6702bcc1325049c04dade0521d[m[33m ([m[1;36mHEAD -> [m[1;32mfeature/addlimpiar[m[33m)[m
+Author: Juanjo <jjguate@hotmail.com>
+Date:   Thu Feb 28 21:27:31 2019 -0600
+
+    Agregando el metodo limpiar
+
+[33mcommit 5f66cbff86f2d3314fe9facc0f33ef0f170146d1[m[33m ([m[1;31morigin/develop[m[33m, [m[1;32mdevelop[m[33m)[m
+Author: Esvin González <usac.ing.esvin@gmail.com>
+Date:   Thu Feb 28 18:52:39 2019 -0600
+
+    Nuevas funcionalidades a desarrollar.
+
+[33mcommit e3c72f82c2da59a1318aa2ac36963b08c92a56fa[m
+Merge: 052b01e 4ec0c2e
+Author: Esvin González <usac.ing.esvin@gmail.com>
+Date:   Thu Feb 28 18:34:40 2019 -0600
+
+    Merge branch 'feature/delete' into develop
+
+[33mcommit 052b01e8bd1d1431163998eafbd37fa7aaa780ca[m
+Merge: 103f891 1fa5e9c
+Author: Esvin González <usac.ing.esvin@gmail.com>
+Date:   Thu Feb 28 18:22:45 2019 -0600
+
+    Merge branch 'feature/improveAdd' into develop
+
+[33mcommit 103f89148fced35665f13281b95609b5f0eae92c[m
+Author: Esvin González <usac.ing.esvin@gmail.com>
+Date:   Thu Feb 28 18:21:39 2019 -0600
+
+    Quitando comentarios inútiles.
+
+[33mcommit 4ec0c2e735bb662de8c9b651cd23b45370ce6044[m[33m ([m[1;31morigin/feature/delete[m[33m)[m
+Author: Esvin González <usac.ing.esvin@gmail.com>
+Date:   Thu Feb 28 18:20:42 2019 -0600
+
+    Agregando eliminación por índice.
+
+[33mcommit 1fa5e9c494608bb4067b7df0440f9044070a8416[m[33m ([m[1;31morigin/feature/improveAdd[m[33m)[m
+Author: Esvin González <usac.ing.esvin@gmail.com>
+Date:   Tue Feb 26 19:27:00 2019 -0600
+
+    Se mejoró el método de inserción.
+
+[33mcommit 8af64af3e557e35a2bd8d97ae7bf44ffc5d5d7af[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Esvin González <usac.ing.esvin@gmail.com>
+Date:   Tue Feb 26 19:18:14 2019 -0600
+
+    Commit inicial.
