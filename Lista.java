@@ -51,16 +51,12 @@ public class Lista <T> {
 			return actual.valor;
 
 		}
-<<<<<<< HEAD
-		throw new IndexOutOfBoundsException("Indice fuera de la lista " + i);
-=======
 		contador--;
 		throw new IndexOutOfBoundsException("Indice fuera de la lista " + i);
 	}
 
 	public void counter(){
 		System.out.println("Numero de Items en la lista:" +contador);
->>>>>>> 0dc1a572f457bcc3cc58d6fac36f3cc0e6cc6af1
 	}
 
 	public T reemplazar(int i, T nuevo){
