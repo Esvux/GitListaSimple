@@ -89,5 +89,4 @@ public class Lista <T> {
 	    }
 		  System.out.println("Ok, la lista no sera modificada");
 	}
-
 }
