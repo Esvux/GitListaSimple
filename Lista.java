@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Lista <T> {
 
 	//Variables globales - Atributo/Propiedad de clase
@@ -104,4 +105,14 @@ public class Lista <T> {
 
 
 
+	public void limpiar(){
+		String respuesta;
+		Scanner reader = new Scanner(System.in);
+		System.out.println("Esta seguro de vaciar la lista? y/n");
+		respuesta = reader.next();
+		  while (respuesta.equalsIgnoreCase("y")){
+		      inicio = null;
+	    }
+		  System.out.println("Ok, la lista no sera modificada");
+	}
 }

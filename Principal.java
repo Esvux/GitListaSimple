@@ -7,14 +7,9 @@ public class Principal {
 		listaArtesanal.agregar(new Persona("Oscar", "Paiz"));
 		listaArtesanal.agregar(new Persona("Rolando", "Secaida"));
 		listaArtesanal.agregar(null);
+		listaArtesanal.eliminar(2);
 		listaArtesanal.mostrar();
-
-		System.out.println("");
-		listaArtesanal.reemplazar(2, new Persona("Hola", "Mundo"));
-
-		listaArtesanal.eliminar(1);
-		listaArtesanal.mostrar();
-		listaArtesanal.counter();
+		listaArtesanal.limpiar();
 	}
 	
 }
